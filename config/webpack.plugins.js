@@ -86,11 +86,11 @@ const favicons = new WebappWebpackPlugin({
   favicons: {
     appName: config.site_name,
     appDescription: config.site_description,
-    developerName: null,
-    developerURL: null,
+    developerName: 'Aleksandr Shevchenko',
+    developerURL: 'https://shevchenko.dev',
     icons: {
-      android: true,
-      appleIcon: true,
+      android: false,
+      appleIcon: false,
       appleStartup: false,
       coast: false,
       favicons: true,
