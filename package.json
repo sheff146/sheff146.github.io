@@ -1,0 +1,17 @@
+{
+  "name": "sheff146.github.io",
+  "version": "1.0.0",
+  "description": "Personal site",
+  "main": "index.js",
+  "repository": "https://github.com/sheff146/sheff146.github.io.git",
+  "author": "sheff146 <alexandre.shevchenko@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}
