@@ -1,5 +1,5 @@
 module.exports = (config) => {
-  // config.addPassthroughCopy('src/favicon.ico');
+  config.addPassthroughCopy('src/images');
   config.addPassthroughCopy('src/styles');
 
   return {
