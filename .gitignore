@@ -5,4 +5,4 @@ yarn.lock
 
 .idea/
 
-_site/
+dist/
