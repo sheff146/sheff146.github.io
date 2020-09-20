@@ -1,0 +1,57 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.page {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  background-color: rgba(0,122,211,1);
+  background-image: linear-gradient(315deg, rgba(0,99,171,1) 0%, rgba(0,122,211,1) 50%, rgba(0,147,255,1) 100%);
+  color: #FEFEFE;
+}
+
+.main {
+  text-align: center;
+  padding-top: 10%;
+}
+
+.main__title {
+  margin-bottom: 0;
+}
+
+.main__desc {
+  margin-top: 0;
+}
+
+.main__section {}
+
+.section {}
+
+.section__title {
+  margin-bottom: 0;
+}
+
+.section__nav {}
+
+.nav {
+
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1em;
+}
+
+.nav li {
+  margin: 1em;
+}
+
+.nav a {
+  color: #FEFEFE;
+}
