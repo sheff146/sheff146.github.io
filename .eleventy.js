@@ -5,7 +5,7 @@ module.exports = (config) => {
   return {
     dir: {
       input: "src",
-      output: "dist"
+      output: "generated"
     },
     templateFormats: ["liquid"]
   }

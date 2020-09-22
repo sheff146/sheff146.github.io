@@ -22,7 +22,7 @@ contacts:
     <nav class="section__nav nav">
       <ul>
         {% for contact in contacts %}
-          <li><a href="{{ contact.href }}" target="_blank"><span class="nav__title">{{ contact.name }}</span></a></li>
+          <li><a href="{{ contact.href }}"><span class="nav__title">{{ contact.name }}</span></a></li>
         {% endfor %}
         {% comment %}<li><a href="mailto:alexandre.shevchenko@gmail.com" title="Email"><img src="images/gmail.svg"{% endcomment %}
                                                                                {% comment %}class="icon"/><span{% endcomment %}
