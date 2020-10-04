@@ -11,7 +11,7 @@
     "clean": "rimraf generated dist",
     "generate": "yarn clean && eleventy",
     "start": "yarn generate && parcel ./generated/index.html",
-    "build": "yarn generate && parcel build ./generated/index.html --no-source-maps",
+    "build": "yarn generate && parcel build ./generated/index.html --no-source-maps && cp CNAME dist",
     "deploy": "yarn build && gh-pages -d dist -m \"Deploy new version\""
   },
   "devDependencies": {
