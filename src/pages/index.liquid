@@ -3,30 +3,34 @@ permalink: /index.html
 layout: page.liquid
 header_text: Aleksandr Shevchenko
 desc_text: Sophisticated Developer
+alt_text: Photo of Aleksandr Shevchenko
 contacts_text: Contacts
 contacts:
-  - 'name': Email
-    'href': mailto:alexandre.shevchenko@gmail.com
   - 'name': LinkedIn
+    'img': linkedin.svg
     'href': https://www.linkedin.com/in/ashev146/
-  - 'name': Twitter
-    'href': https://twitter.com/sheff146
   - 'name': Github
+    'img': github.svg
     'href': https://github.com/sheff146
+  - 'name': Twitter
+    'img': twitter.svg
+    'href': https://twitter.com/sheff146
+  - 'name': E-mail
+    'img': mail.svg
+    'href': mailto:alexandre.shevchenko@gmail.com
 ---
 <main class="main">
+  <img class="main__photo" src="images/photo.jpg" alt="{{ alt_text }}"/>
   <h1 class="main__title">{{ header_text }}</h1>
   <p class="main__desc">{{ desc_text }}</p>
   <section class="main__section section">
-    <h2 class="section__title">{{ contacts_text }}</h2>
+    <h2 class="section__title visually-hidden">{{ contacts_text }}</h2>
     <nav class="section__nav nav">
-      <ul>
+      <ul class="nav__list">
         {% for contact in contacts %}
-          <li><a href="{{ contact.href }}"><span class="nav__title">{{ contact.name }}</span></a></li>
+          <li class="nav__list-item"><a class="nav__link" href="{{ contact.href }}" title="{{ contact.name }}"><img
+                src="images/{{ contact.img }}" class="nav__img icon" aria-hidden="true" alt="{{ contact.name }}"/></a></li>
         {% endfor %}
-        {% comment %}<li><a href="mailto:alexandre.shevchenko@gmail.com" title="Email"><img src="images/gmail.svg"{% endcomment %}
-                                                                               {% comment %}class="icon"/><span{% endcomment %}
-          {% comment %}class="title">Email</span></a></li>{% endcomment %}
       </ul>
     </nav>
   </section>
