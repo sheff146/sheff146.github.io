@@ -9,8 +9,8 @@
   "private": true,
   "scripts": {
     "clean": "rimraf dist",
-    "start": "yarn generate && parcel ./index.html",
-    "build": "yarn generate && parcel build ./index.html --no-source-maps && cp CNAME dist"
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html --no-source-maps && cp CNAME dist"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
