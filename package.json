@@ -2,7 +2,6 @@
   "name": "sheff146.github.io",
   "version": "1.0.0",
   "description": "Personal site",
-  "main": "index.js",
   "repository": "https://github.com/sheff146/sheff146.github.io.git",
   "author": "sheff146 <alexandre.shevchenko@gmail.com>",
   "license": "MIT",
@@ -13,7 +12,7 @@
     "build": "parcel build ./src/index.html --no-source-maps && cp CNAME dist"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.5",
+    "parcel": "^2.0.0",
     "rimraf": "^3.0.2"
   }
 }
