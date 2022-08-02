@@ -12,7 +12,9 @@
     "build": "parcel build ./src/index.html --no-source-maps && cp CNAME dist"
   },
   "devDependencies": {
+    "cssnano": "^5.1.12",
     "parcel": "^2.0.0",
+    "postcss": "^8.4.14",
     "rimraf": "^3.0.2"
   }
 }
