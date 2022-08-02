@@ -60,17 +60,14 @@
 .nav__link {
   display: inline-block;
   border-radius: 8px;
+  width: 64px;
+  height: 64px;
 }
 
 .nav__link:hover,
 .nav__link:focus {
   outline: none;
   background-color: var(--link-active-color);
-}
-
-.nav__img {
-  width: 64px;
-  height: 64px;
 }
 
 .visually-hidden:not(:focus):not(:active) {
